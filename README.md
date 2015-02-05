@@ -1,6 +1,6 @@
-# connect-external-sass
+# sass-update-middleware
 
-Compiler sass and scss, using external ruby sass command exec.
+Call `sass --update src:dest` on request
 
 ## Usage
 
@@ -9,9 +9,14 @@ var connect = require('connect');
 var externalSass = require('connect-external-sass');
 
 connect(
-  externalSass(__dirname + '/views', {
+  externalSass({
+    src: __dirname + '/sass',
+    dest: __dirname + '/css',
     sassPath: '/usr/local/bin/sass',
-    cache: true
+    includePaths: [
+      __dirname + '/sass/bourbon',
+      __dirname + '/sass/neat'
+    ]
   })
 );
 ```

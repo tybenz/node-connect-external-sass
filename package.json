@@ -1,15 +1,12 @@
 {
-  "name": "connect-external-sass",
-  "description": "Compiler sass and scss, using external ruby sass command exec.",
-  "version": "0.2.4",
+  "name": "sass-update-middleware",
+  "description": "Call sass update on request",
+  "version": "1.0.0",
   "author": "Tyler Benziger",
   "repository": {
     "type": "git",
-    "url": "http://github.com/tybenz/node-connect-external-sass.git"
+    "url": "http://github.com/tybenz/sass-update-middleware.git"
   },
-  "dependencies": {
-    "connect": ">=1.5.1"
-  },
-  "keywords": ["connect", "sass"],
+  "keywords": ["sass"],
   "main": "./index"
 }
