@@ -1,7 +1,7 @@
 {
   "name": "connect-external-sass",
   "description": "Compiler sass and scss, using external ruby sass command exec.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Tyler Benziger",
   "repository": {
     "type": "git",
